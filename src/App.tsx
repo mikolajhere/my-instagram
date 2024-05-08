@@ -1,9 +1,13 @@
-import React from 'react'
+import Aside from "./components/Aside";
+import Main from "./components/Main";
 
 const App = () => {
   return (
-    <div>App</div>
-  )
-}
+    <div className="flex">
+      <Aside />
+      <Main />
+    </div>
+  );
+};
 
-export default App
+export default App;
