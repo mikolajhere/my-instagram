@@ -1,6 +1,10 @@
+import { Outlet } from "react-router-dom";
+
 const Main = () => {
   return (
-    <main className=" min-h-dvh sm:pl-64 flex flex-grow flex-col">sss</main>
+    <main className=" flex min-h-dvh flex-grow flex-col sm:pl-64">
+      <Outlet />
+    </main>
   );
 };
 

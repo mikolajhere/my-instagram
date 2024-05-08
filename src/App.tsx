@@ -1,12 +1,15 @@
-import Aside from "./components/Aside";
-import Main from "./components/Main";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { path } from "./constants/path";
+import Home from "./components/Home";
 
 const App = () => {
   return (
-    <div className="flex">
-      <Aside />
-      <Main />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path={path.home} element={<Home />}></Route>
+        
+      </Routes>
+    </BrowserRouter>
   );
 };
 
